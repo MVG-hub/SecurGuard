@@ -1,0 +1,70 @@
+﻿# ================================================================
+#  SecurCode — .gitignore
+# ================================================================
+
+# ── Secrets & Environment ────────────────────────────────────────
+.env
+*.env
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.json
+credentials.json
+
+# ── Python ───────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+venv/
+env/
+ENV/
+.venv/
+pip-wheel-metadata/
+*.whl
+
+# ── Database (SQLite — do not expose user data) ───────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Logs ─────────────────────────────────────────────────────────
+*.log
+
+# ── Node / Frontend ──────────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+
+# ── Vite build output ────────────────────────────────────────────
+dist/
+build/
+
+# ── OS files ─────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE & Editor ─────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Test & Coverage ──────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── Temp scanner directories ─────────────────────────────────────
+tmp/
+temp/
+uploads/
+securcode_*/
